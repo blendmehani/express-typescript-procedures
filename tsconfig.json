@@ -1,0 +1,62 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@config": [
+        "src/config/index"
+      ],
+      "@config/*": [
+        "src/config/*"
+      ],
+      "@containers/*": [
+        "src/containers/*"
+      ],
+      "@controllers/*": [
+        "src/controllers/*"
+      ],
+      "@helpers/*": [
+        "src/helpers/*"
+      ],
+      "@middlewares/*": [
+        "src/middlewares/*"
+      ],
+      "@models/*": [
+        "src/models/*"
+      ],
+      "@services/*": [
+        "src/services/*"
+      ],
+      "@repositories/*": [
+        "src/repositories/*"
+      ],
+      "@routes": [
+        "src/routes/index"
+      ],
+      "@routes/*": [
+        "src/routes/*"
+      ],
+      "*": [ // types
+        "src/@types/*"
+      ]
+    },
+    "target": "es6",
+    "module": "commonjs",
+    // "sourceMap": true,
+    "outDir": "./dist",
+    "strict": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": false,
+    "noEmitOnError": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "watch": false,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
+  },
+  "include": [
+    "src/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
